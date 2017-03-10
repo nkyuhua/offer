@@ -1,6 +1,11 @@
 package nk.algorithm;
 
-public class T3 {
+/**
+ * 查找二维数组
+ * @author nk
+ *
+ */
+public class T03 {
 
 	/*
 	 * 1、基础查找 利用给定数组特点，每个顶点组成的横竖折线都是特殊点（横线中其最大，竖线中其最小） 时间复杂度O(n+m)；

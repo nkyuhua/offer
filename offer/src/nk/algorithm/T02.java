@@ -2,8 +2,11 @@ package nk.algorithm;
 
 import java.util.Observable;
 import java.util.Observer;
-
-public class T2 {
+/**
+ * 单例
+ *
+ */
+public class T02 {
 
 	// 1、赖汉式 双重校验锁
 	public static class Singleton1 {

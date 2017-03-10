@@ -1,6 +1,11 @@
 package nk.algorithm;
 
-public class T4 {
+/**
+ * 字符串替换空格
+ * @author nk
+ *
+ */
+public class T04 {
 
 	public static String trim(String in) {
 		if (in == null || in.isEmpty())

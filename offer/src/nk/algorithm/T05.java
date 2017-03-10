@@ -2,7 +2,13 @@ package nk.algorithm;
 
 import java.util.Stack;
 
-public class T5<E> {
+/**
+ * 逆向打印单链表
+ * @author nk
+ *
+ * @param <E>
+ */
+public class T05<E> {
 
 	/**
 	 * 利用栈结构逆向打印单链表
