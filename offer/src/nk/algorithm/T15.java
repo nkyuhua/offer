@@ -3,7 +3,7 @@ package nk.algorithm;
 import nk.algorithm.T13.ListNode;
 
 /**
- * »ñÈ¡µ¥Á´±íµ¹ÊıµÚk¸öÊı
+ * è·å–å•é“¾è¡¨å€’æ•°ç¬¬kä¸ªæ•°
  * 
  * @author nk
  * 
@@ -14,7 +14,7 @@ public class T15 {
 	 * 
 	 * @param root
 	 * @param k
-	 *            ´Ó1¿ªÊ¼¼ÆÊı
+	 *            ä»1å¼€å§‹è®¡æ•°
 	 * @return
 	 */
 	public static <E> ListNode<E> get(ListNode<E> root, int k) {
@@ -34,6 +34,7 @@ public class T15 {
 		}
 		return p2;
 	}
+
 	public static void main(String[] args) {
 		ListNode<Integer> node5 = new ListNode<>(5, null);
 		ListNode<Integer> node4 = new ListNode<>(4, node5);

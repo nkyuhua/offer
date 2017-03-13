@@ -1,8 +1,9 @@
 package nk.algorithm;
 
 import java.math.BigInteger;
+
 /**
- * ÊäÈën£¬Êä³önÎ»Êı×Ö
+ * è¾“å…¥nï¼Œè¾“å‡ºnä½æ•°å­—
  * 
  * @author nk
  * 
@@ -21,6 +22,7 @@ public class T12 {
 		}
 
 	}
+
 	private static String getMaxStr(int n) {
 		return Integer.toBinaryString(1 << n);
 	}

@@ -1,7 +1,7 @@
 package nk.algorithm;
 
 /**
- * 0(1) É¾³ıµ¥Á´±íÖ¸¶¨½Úµã
+ * 0(1) åˆ é™¤å•é“¾è¡¨æŒ‡å®šèŠ‚ç‚¹
  * 
  * @author nk
  * 
@@ -35,8 +35,9 @@ public class T13 {
 		return listNode;
 
 	}
+
 	/**
-	 * µ¥Á´±í
+	 * å•é“¾è¡¨
 	 * 
 	 * @author nk
 	 * 
@@ -51,6 +52,7 @@ public class T13 {
 			this.value = value;
 			this.next = next;
 		}
+
 		@Override
 		public int hashCode() {
 			final int prime = 31;

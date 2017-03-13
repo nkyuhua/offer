@@ -1,6 +1,5 @@
 package nk.algorithm;
 
-import java.util.Arrays;
 
 /**
  * 已知前序中序，重建二叉树

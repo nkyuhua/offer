@@ -3,7 +3,7 @@ package nk.algorithm;
 import java.util.Arrays;
 
 /**
- * °´¹æ¶¨ÖØÅÅÊı×é
+ * æŒ‰è§„å®šé‡æ’æ•°ç»„
  * 
  * @author nk
  * 

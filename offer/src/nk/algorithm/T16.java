@@ -3,7 +3,7 @@ package nk.algorithm;
 import nk.algorithm.T13.ListNode;
 
 /**
- * ·´×ªµ¥Á´±í
+ * åè½¬å•é“¾è¡¨
  * 
  * @author nk
  * 
