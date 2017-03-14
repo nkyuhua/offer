@@ -1,6 +1,5 @@
 package nk.algorithm;
 
-
 /**
  * 已知前序中序，重建二叉树
  * 
@@ -51,12 +50,51 @@ public class T06 {
 	 * 
 	 * @param <E>
 	 */
-	private static class BinaryTreeNode<E> {
+	public static class BinaryTreeNode<E> {
 		E value;
 		BinaryTreeNode<E> left;
 		BinaryTreeNode<E> right;
 
-		BinaryTreeNode() {
+		public BinaryTreeNode() {
+		}
+
+		/**
+		 * 前序遍历二叉树
+		 * 
+		 * @param root
+		 */
+		public static <E> void preSearch(BinaryTreeNode<E> root) {
+			if (root != null) {
+				System.out.print(root.value.toString() + "\t");
+				preSearch(root.left);
+				preSearch(root.right);
+			}
+		}
+
+		/**
+		 * 中序遍历二叉树
+		 * 
+		 * @param root
+		 */
+		public static <E> void midSearch(BinaryTreeNode<E> root) {
+			if (root != null) {
+				midSearch(root.left);
+				System.out.print(root.value.toString() + "\t");
+				midSearch(root.right);
+			}
+		}
+
+		/**
+		 * 后续遍历二叉树
+		 * 
+		 * @param root
+		 */
+		public static <E> void backSearch(BinaryTreeNode<E> root) {
+			if (root != null) {
+				backSearch(root.left);
+				backSearch(root.right);
+				System.out.print(root.value.toString() + "\t");
+			}
 		}
 
 	}
@@ -66,51 +104,12 @@ public class T06 {
 		Integer[] mid = { 4, 7, 2, 1, 5, 3, 8, 6 };
 		BinaryTreeNode<Integer> root = getTreeFromPreMidOrder(left, mid);
 		System.out.print("前序遍历\t");
-		preSearch(root);
+		root.preSearch(root);
 		System.out.print("\n中序遍历\t");
-		midSearch(root);
+		root.midSearch(root);
 		System.out.print("\n后序遍历\t");
-		backSearch(root);
+		root.backSearch(root);
 
-	}
-
-	/**
-	 * 前序遍历二叉树
-	 * 
-	 * @param root
-	 */
-	static <E> void preSearch(BinaryTreeNode<E> root) {
-		if (root != null) {
-			System.out.print(root.value.toString() + "\t");
-			preSearch(root.left);
-			preSearch(root.right);
-		}
-	}
-
-	/**
-	 * 中序遍历二叉树
-	 * 
-	 * @param root
-	 */
-	static <E> void midSearch(BinaryTreeNode<E> root) {
-		if (root != null) {
-			midSearch(root.left);
-			System.out.print(root.value.toString() + "\t");
-			midSearch(root.right);
-		}
-	}
-
-	/**
-	 * 后续遍历二叉树
-	 * 
-	 * @param root
-	 */
-	static <E> void backSearch(BinaryTreeNode<E> root) {
-		if (root != null) {
-			backSearch(root.left);
-			backSearch(root.right);
-			System.out.print(root.value.toString() + "\t");
-		}
 	}
 
 }

@@ -47,6 +47,9 @@ public class T13 {
 		E value;
 		ListNode<E> next;
 
+		public ListNode() {
+		}
+
 		public ListNode(E value, ListNode<E> next) {
 			super();
 			this.value = value;
